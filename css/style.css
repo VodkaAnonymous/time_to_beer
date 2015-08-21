@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 10px;
+}
+
+.bla {
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.pg {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.fsvd {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(http://ostap.nl/polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+.hvd {
+    display: none;
+}
+
+.imgcat {
+    border-radius: 15px;
+}
+
+.imgcatz {
+    border-radius: 95px;
+    width: auto;
+    height: 200px;
+}
+
+.imgbx {
+}
+
+.imgbx1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.imgbx2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.imgbx3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.imgbx4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+.clock-container {
+    display: inline-block
+}
+
+body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn {
+    color: #CCCCCC;
+    background-color: #333333;
+}
+
+body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot {
+    background: #323434;
+}
+
+body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a {
+    color: #323434;
+}

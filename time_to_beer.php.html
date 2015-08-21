@@ -1,177 +1,51 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <META http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-
-<style>
-body
-{
-	margin:0;
-	padding:0;
-}
-img
-{
-	margin:10px;
-}
-.bla
-{
-	font-size:40px;
-	color:#000000;
-	font-weight:bold;
-	margin:20px;
-}
-.pg
-{
-	width:100%;
-	text-align:center;
-	margin:0;
-	padding:0;
-}
-
-
-
-.fsvd
-{
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -100;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	background: url(http://ostap.nl/polina.jpg) no-repeat;
-	background-size: cover;
-}
-
-.hvd
-{
-	display:none;
-}
-
-.imgcat
-{
-	border-radius: 15px;
-}
-
-.imgcatz
-{
-	border-radius: 95px;
-	width:auto;
-	height:200px;
-}
-
-.imgbx
-{
-}
-.imgbx1
-{
-	position:absolute;
-	left:0;
-	top:0;
-}
-.imgbx2
-{
-	position:absolute;
-	top:0;
-	right:0;
-}
-.imgbx3
-{
-	position:absolute;
-	bottom:0;
-	right:0;
-}
-.imgbx4
-{
-	position:absolute;
-	left:0;
-	bottom:0;
-}
-
-
-</style>
-
 <div class=pg>
-	<div style="margin:auto;position:relative;top:10px;">
-		<div class=bla>
-			TIME BEFORE NEXT FRIDAY BEGINS.....<BR>
-			AND BEER START FLOWING....<BR>
-		</div>
+    <div class="container">
+        <div class=bla>
+            TIME BEFORE NEXT FRIDAY BEGINS.....<br>
+            AND BEER START FLOWING....<br>
+        </div>
 
-		<span style="display:inline-block">
+		<span class="clock-container" style="">
 			<div class="clock-builder-output"></div>
-			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-			<script type="text/javascript" src="clock_assets/flipclock.js"></script>
-			<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
-			<style text="text/css">
-				body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }
-			</style>
-		</div>
-	</span>
-			<img src="http://ostap.nl/images/3D_Animated_Dancing_Girl.gif" height=300>
-		<img src="http://ostap.nl/images/catbeer.gif" class=imgcat>
-		<img src="http://ostap.nl/images/nasty.GIF" style='margin:0 15px 0 15px' height=300>
-		<br>
-		<div class=imgbx1><img src="http://ostap.nl/images/cat4.gif" class=imgcatz></div>
-		<div class=imgbx2><img src="http://ostap.nl/images/cat1.gif" class=imgcatz></div>
-		<div class=imgbx3><img src="http://ostap.nl/images/cat5.gif" class=imgcatz></div>
-		<div class=imgbx4><img src="http://ostap.nl/images/cat3.gif" class=imgcatz></div>
-	
-	<video autoplay onended="vrun();" id="bgvid1" class=fsvd>
-		<source id=zss src="video/random1.mp4" type="video/mp4">
-	</video>
-	<video onended="vrun();" id="bgvid2" class="fsvd hvd">
-		<source id=zss src="video/random2.mp4" type="video/mp4">
-	</video>
-	<video onended="vrun();" id="bgvid3" class="fsvd hvd">
-		<source id=zss src="video/random3.mp4" type="video/mp4">
-	</video>
-	<video onended="vrun();" id="bgvid4" class="fsvd hvd">
-		<source id=zss src="video/random4.mp4" type="video/mp4">
-	</video>
-	<video onended="vrun();" id="bgvid5" class="fsvd hvd">
-		<source id=zss src="video/random5.mp4" type="video/mp4">
-	</video>
+        </span>
+    </div>
+    <img src="http://ostap.nl/images/3D_Animated_Dancing_Girl.gif" height=300>
+    <img src="http://ostap.nl/images/catbeer.gif" class=imgcat>
+    <img src="http://ostap.nl/images/nasty.GIF" style='margin:0 15px 0 15px' height=300>
+    <br>
+
+    <div class=imgbx1><img src="http://ostap.nl/images/cat4.gif" class=imgcatz></div>
+    <div class=imgbx2><img src="http://ostap.nl/images/cat1.gif" class=imgcatz></div>
+    <div class=imgbx3><img src="http://ostap.nl/images/cat5.gif" class=imgcatz></div>
+    <div class=imgbx4><img src="http://ostap.nl/images/cat3.gif" class=imgcatz></div>
+
+    <video autoplay onended="vrun();" id="bgvid1" class=fsvd>
+        <source src="video/random1.mp4" type="video/mp4">
+    </video>
+    <video onended="vrun();" id="bgvid2" class="fsvd hvd">
+        <source src="video/random2.mp4" type="video/mp4">
+    </video>
+    <video onended="vrun();" id="bgvid3" class="fsvd hvd">
+        <source src="video/random3.mp4" type="video/mp4">
+    </video>
+    <video onended="vrun();" id="bgvid4" class="fsvd hvd">
+        <source src="video/random4.mp4" type="video/mp4">
+    </video>
+    <video onended="vrun();" id="bgvid5" class="fsvd hvd">
+        <source src="video/random5.mp4" type="video/mp4">
+    </video>
 
 </div>
-
-<script type="text/javascript">
-$(function()
-	{
-		FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
-			var opts =
-		{
-			clockFace: 'DailyCounter',
-			//clockFace: 'HourCounter',
-			countdown: true,
-			language: 'Custom'
-		};
-			//var countdown = 1439564100  - ((new Date().getTime())/1000);
-			var countdown = (1439564100 +(((60*60)*24)*7)) - ((new Date().getTime())/1000);
-			//var countdown = 1439664100 +(((60*60)*24)*6)  - ((new Date().getTime())/1000);
-			countdown = Math.max(1, countdown);
-		$('.clock-builder-output').FlipClock(countdown, opts);
-	});
-var video_count =1;
-
-function vrun()
-{
-	video=document.getElementById("bgvid"+video_count);
-	video.style.display='none';
-	video_count++;
-	if (video_count == 6) video_count = 1;
-	video=document.getElementById("bgvid"+video_count);
-	video.style.display='block';
-	video.play();
-}
-</script>
-
-
-
 </body>
 </html>
