@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /stats_page1.php
+Disallow: /stats_page2.php
+Disallow: /directrequest.php
+Disallow: /LWdirectrequest.php
+Disallow: /assets
+Disallow: /images
