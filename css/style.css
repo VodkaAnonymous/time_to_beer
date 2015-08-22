@@ -7,11 +7,60 @@ img {
     margin: 10px;
 }
 
-.bla {
+#motd {
+    color: #fff;
+}
+
+blockquote {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
+}
+
+#motd .author:before {
+    content: '~ ';
+}
+
+#motd .author:after {
+    content: ' ~';
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.booze {
+    display: none;
+    text-transform: uppercase;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+.booze.current {
+    display: inline-block;
+}
+
+.title {
     font-size: 40px;
-    color: #000000;
-    font-weight: bold;
-    margin: 20px;
+    font-family: 'Carter One', serif;
+    color: #fff;
+    text-shadow: 0 -1px 4px white, 0 -2px 10px yellow, 0 -10px 20px #ff8000, 0 -18px 40px red;
 }
 
 .pg {
@@ -32,7 +81,6 @@ img {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(http://ostap.nl/polina.jpg) no-repeat;
     background-size: cover;
 }
 
