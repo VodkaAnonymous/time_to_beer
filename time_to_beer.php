@@ -45,7 +45,7 @@
 
     <div class=imgbx1><img src="images/cat4.gif" class=imgcatz></div>
     <div class=imgbx2><img src="images/cat1.gif" class=imgcatz></div>
-    <div class=imgbx3><img src="mages/cat5.gif" class=imgcatz></div>
+    <div class=imgbx3><img src="images/cat5.gif" class=imgcatz></div>
     <div class=imgbx4><img src="images/cat3.gif" class=imgcatz></div>
 
 
