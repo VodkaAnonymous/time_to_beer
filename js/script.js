@@ -1,7 +1,7 @@
 var video_count = 1;
 
 function vrun() {
-    video = document.getElementById("bgvid" + video_count);
+    var video = document.getElementById("bgvid" + video_count);
     video.style.display = 'none';
     video_count++;
     if (video_count == 6) video_count = 1;
@@ -11,7 +11,6 @@ function vrun() {
 }
 
 $(function () {
-    calculateNextFriday();
     FlipClock.Lang.Custom = {days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds'};
     var opts =
     {
@@ -20,10 +19,8 @@ $(function () {
         countdown: true,
         language: 'Custom'
     };
-    //var countdown = 1439564100  - ((new Date().getTime())/1000);
     var countdown = (calculateNextFriday() + (((60 * 60) * 24) * 7)) - ((new Date().getTime()) / 1000);
-    //var countdown = 1439664100 +(((60*60)*24)*6)  - ((new Date().getTime())/1000);
-    countdown = Math.max(1, countdown);
+    countdown = Math.max(3, countdown);
     $('.clock-builder-output').FlipClock(countdown, opts);
 });
 jumpToNextFriday = function (date) {
