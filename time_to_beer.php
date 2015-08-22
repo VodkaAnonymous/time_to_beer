@@ -25,18 +25,34 @@
 			<div class="clock-builder-output"></div>
         </span>
     </div>
-    <img src="http://ostap.nl/images/3D_Animated_Dancing_Girl.gif" height=300>
-    <img src="http://ostap.nl/images/catbeer.gif" class=imgcat>
-    <img src="http://ostap.nl/images/nasty.GIF" style='margin:0 15px 0 15px' height=300>
+		 <CENTER>
+			<table cellpadding=0 cellspacing=0>
+				<tr>
+					<td>
+				    <img src="images/3D_Animated_Dancing_Girl.gif" height=300>
+					</td>
+					<td>
+				    <img src="images/catbeer.gif" class=imgcat>
+					</td>
+					<td>
+						<img src="images/nasty.GIF" style='margin:0 15px 0 15px' height=300>
+					</td>
+				</tr>
+			</table>
+		</center>
+
     <br>
 
-    <div class=imgbx1><img src="http://ostap.nl/images/cat4.gif" class=imgcatz></div>
-    <div class=imgbx2><img src="http://ostap.nl/images/cat1.gif" class=imgcatz></div>
-    <div class=imgbx3><img src="http://ostap.nl/images/cat5.gif" class=imgcatz></div>
-    <div class=imgbx4><img src="http://ostap.nl/images/cat3.gif" class=imgcatz></div>
+    <div class=imgbx1><img src="images/cat4.gif" class=imgcatz></div>
+    <div class=imgbx2><img src="images/cat1.gif" class=imgcatz></div>
+    <div class=imgbx3><img src="mages/cat5.gif" class=imgcatz></div>
+    <div class=imgbx4><img src="images/cat3.gif" class=imgcatz></div>
+
+
 
     <video autoplay onended="vrun();" id="bgvid1" class=fsvd>
         <source src="video/random1.mp4" type="video/mp4">
+	    	<img src="video/random1.gif">
     </video>
     <video onended="vrun();" id="bgvid2" class="fsvd hvd">
         <source src="video/random2.mp4" type="video/mp4">
@@ -55,5 +71,15 @@
         <em class="author"></em>
     </div>
 </div>
+
+<script>
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+{
+	$('#bgvid1').attr('poster', 'video/random1.gif');
+}
+
+</script>
+
+
 </body>
 </html>
