@@ -19,7 +19,6 @@ var Booze = {
 
         boozeContainer.find('.booze').first().addClass('current');
         setInterval(function () {
-            console.log(this.currentBooze);
             boozeContainer.find('.booze.current').removeClass('current');
             boozeContainer.find('.booze:eq( ' + this.currentBooze + '  )').addClass('current');
             this.currentBooze++;

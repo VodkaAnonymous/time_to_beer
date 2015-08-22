@@ -204,5 +204,10 @@ var Quotes = {
     ],
     getRandomQuote: function () {
         return this.quotes[Math.floor(Math.random() * this.quotes.length)];
+    },
+    changeNextQuote: function (message, author) {
+        var randomQuote = this.getRandomQuote();
+        message.text(randomQuote.quote);
+        author.text(randomQuote.author);
     }
 };
