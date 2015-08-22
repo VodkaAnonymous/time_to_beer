@@ -2,21 +2,26 @@
 <html>
 <head>
     <META http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <link href="http://fonts.googleapis.com/css?family=Carter+One:regular" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster:regular" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css"/>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+    <script type="text/javascript" src="js/friday-calculator.js"></script>
+    <script type="text/javascript" src="js/videos.js"></script>
+    <script type="text/javascript" src="js/quotes.js"></script>
+    <script type="text/javascript" src="js/booze.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class=pg>
     <div class="container">
-        <div class=bla>
+        <h1 class=title>
             TIME BEFORE NEXT FRIDAY BEGINS.....<br>
-            AND BEER START FLOWING....<br>
-        </div>
-
-		<span class="clock-container" style="">
+            AND <span id="boozes-container"></span> STARTS FLOWING....
+        </h1>
+        <span class="clock-container" style="">
 			<div class="clock-builder-output"></div>
         </span>
     </div>
@@ -45,7 +50,10 @@
     <video onended="vrun();" id="bgvid5" class="fsvd hvd">
         <source src="video/random5.mp4" type="video/mp4">
     </video>
-
+    <div id="motd">
+        <blockquote class="message"></blockquote>
+        <em class="author"></em>
+    </div>
 </div>
 </body>
 </html>
