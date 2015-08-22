@@ -17,7 +17,7 @@ var fridayCalculator = {
     calculateNextFriday: function () {
         var now = new Date();
         var nextFriday;
-        if (now.getDay() === 5) {
+        if (now.getDay() === 5 && now.getHours() < 17) {
             nextFriday = new Date(now);
         } else {
             nextFriday = this.jumpToNextFriday(now);
