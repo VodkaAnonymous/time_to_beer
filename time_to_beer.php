@@ -19,7 +19,7 @@
     <div class="container">
         <h1 class=title>
             TIME BEFORE NEXT FRIDAY BEGINS.....<br>
-            AND <span id="boozes-container"></span> STARTS FLOWING....
+            AND <span id="boozes-container"></span> STARTS FLOWING...
         </h1>
         <span class="clock-container" style="">
 			<div class="clock-builder-output"></div>
